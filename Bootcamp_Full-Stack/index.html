@@ -7,89 +7,156 @@
     <!-- Bootstrap & Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 <body>
-    <header>
+    <header class="bg-primary text-white text-center py-4">
         <h1>Menú de Trabajos Prácticos</h1>
     </header>
 
-    <nav>
-        <ul class="menu">
-            <!-- Contacto -->
-            <li>
-                <button class="toggle-button">Contacto</button>
-                <ul class="submenu">
-                    <li>
-                        <a href="https://www.linkedin.com/in/ulises-mb/" target="_blank">
-                            <i class="bi bi-linkedin"></i> LinkedIn
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Ulimb" target="_blank">
-                            <i class="bi bi-github"></i> GitHub
-                        </a>
-                    </li>
-                </ul>
-            </li>
+    <!-- Tps Individuales -->
+    <div class="container mt-4">
+        <nav>
+            <ul class="list-group">
+                <!-- Contacto -->
+                <li class="list-group-item">
+                    <button class="btn btn-outline-primary w-100 text-start" data-bs-toggle="collapse" data-bs-target="#contacto" aria-expanded="false" aria-controls="contacto">
+                        Contacto <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="list-group collapse" id="contacto">
+                        <li class="list-group-item">
+                            <a href="https://www.linkedin.com/in/ulises-mb/" target="_blank" class="d-block">
+                                <i class="bi bi-linkedin"></i> LinkedIn
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://github.com/Ulimb" target="_blank" class="d-block">
+                                <i class="bi bi-github"></i> GitHub
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
-            <!-- Semana 1 -->
-            <li>
-                <button class="toggle-button">Semana 1</button>
-                <ul class="submenu">
-                    <li><a href="./Semana-1/Enunciado.md" target="_blank">Enunciado</a></li>
-                    <li><a href="./Semana-1/Tarea-0/index.html" target="_blank">Tarea 0</a></li>
-                    <li><a href="./Semana-1/Tarea-1/index.html" target="_blank">Tarea 1</a></li>
-                    <li><a href="./Semana-1/Tarea-2/index.html" target="_blank">Tarea 2</a></li>
-                    <li><a href="./Semana-1/Tarea-3/index.html" target="_blank">Tarea 3</a></li>
-                    <li><a href="./Semana-1/Tarea-4/index.html" target="_blank">Tarea 4</a></li>
-                </ul>
-            </li>
+                <!-- Semana 1 -->
+                <li class="list-group-item">
+                    <button class="btn btn-outline-primary w-100 text-start" data-bs-toggle="collapse" data-bs-target="#semana1" aria-expanded="false" aria-controls="semana1">
+                        Semana 1 <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="list-group collapse" id="semana1">
+                        <li class="list-group-item"><a href="./Semana-1/Enunciado.md" target="_blank">Enunciado</a></li>
+                        <li class="list-group-item"><a href="./Semana-1/Tarea-0/index.html" target="_blank">Tarea 0</a></li>
+                        <li class="list-group-item"><a href="./Semana-1/Tarea-1/index.html" target="_blank">Tarea 1</a></li>
+                        <li class="list-group-item"><a href="./Semana-1/Tarea-2/index.html" target="_blank">Tarea 2</a></li>
+                        <li class="list-group-item"><a href="./Semana-1/Tarea-3/index.html" target="_blank">Tarea 3</a></li>
+                        <li class="list-group-item"><a href="./Semana-1/Tarea-4/index.html" target="_blank">Tarea 4</a></li>
+                    </ul>
+                </li>
 
-            <!-- Semana 2 -->
-            <li>
-                <button class="toggle-button">Semana 2</button>
-                <ul class="submenu">
-                    <li><a href="./Semana-2/Enunciado.md" target="_blank">Enunciado</a></li>
-                    <li><a href="./Semana-2/TP-Accesibilidad-Validación.pdf" target="_blank">TP - Accesibilidad y Validación (PDF)</a></li>
-                </ul>
-            </li>
+                <!-- Semana 2 -->
+                <li class="list-group-item">
+                    <button class="btn btn-outline-primary w-100 text-start" data-bs-toggle="collapse" data-bs-target="#semana2" aria-expanded="false" aria-controls="semana2">
+                        Semana 2 <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="list-group collapse" id="semana2">
+                        <li class="list-group-item"><a href="./Semana-2/Enunciado.md" target="_blank">Enunciado</a></li>
+                        <li class="list-group-item"><a href="./Semana-2/TP-Accesibilidad-Validación.pdf" target="_blank">TP - Accesibilidad y Validación (PDF)</a></li>
+                    </ul>
+                </li>
 
-            <!-- Semana 3 -->
-            <li>
-                <button class="toggle-button">Semana 3</button>
-                <ul class="submenu">
-                    <li><a href="./Semana-3/Enunciado.md" target="_blank">Enunciado</a></li>
-                    <li><a href="./Semana-3/TP-Hosting.pdf" target="_blank">TP - Hosting (PDF)</a></li>
-                    <li><a href="./Semana-3/TP-Vercel.pdf" target="_blank">TP - Vercel (PDF)</a></li>
-                </ul>
-            </li>
+                <!-- Semana 3 -->
+                <li class="list-group-item">
+                    <button class="btn btn-outline-primary w-100 text-start" data-bs-toggle="collapse" data-bs-target="#semana3" aria-expanded="false" aria-controls="semana3">
+                        Semana 3 <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="list-group collapse" id="semana3">
+                        <li class="list-group-item"><a href="./Semana-3/Enunciado.md" target="_blank">Enunciado</a></li>
+                        <li class="list-group-item"><a href="./Semana-3/TP-Hosting.pdf" target="_blank">TP - Hosting (PDF)</a></li>
+                        <li class="list-group-item"><a href="./Semana-3/TP-Vercel.pdf" target="_blank">TP - Vercel (PDF)</a></li>
+                    </ul>
+                </li>
 
-            <!-- Semana 4 -->
-            <li>
-                <button class="toggle-button">Semana 4</button>
-                <ul class="submenu">
-                    <li><a href="./semana-4/Enunciado.txt" target="_blank">Enunciado</a></li>
-                    <li><a href="./semana-4/TP-Git.pdf" target="_blank">TP - Git (PDF)</a></li>
-                </ul>
-            </li>
+                <!-- Semana 4 -->
+                <li class="list-group-item">
+                    <button class="btn btn-outline-primary w-100 text-start" data-bs-toggle="collapse" data-bs-target="#semana4" aria-expanded="false" aria-controls="semana4">
+                        Semana 4 <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="list-group collapse" id="semana4">
+                        <li class="list-group-item"><a href="./semana-4/Enunciado.txt" target="_blank">Enunciado</a></li>
+                        <li class="list-group-item"><a href="./semana-4/TP-Git.pdf" target="_blank">TP - Git (PDF)</a></li>
+                    </ul>
+                </li>
 
-            <!-- Semana 5 -->
-            <li>
-                <button class="toggle-button">Semana 5</button>
-                <ul class="submenu">
-                    <li><a href="./semana-5/Enunciado.txt" target="_blank">Enunciado</a></li>
-                    <li><a href="./semana-5/index.html" target="_blank">TP - Bootstrap (Readaptación del formulario de la semana 1)</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+                <!-- Semana 5 -->
+                <li class="list-group-item">
+                    <button class="btn btn-outline-primary w-100 text-start" data-bs-toggle="collapse" data-bs-target="#semana5" aria-expanded="false" aria-controls="semana5">
+                        Semana 5 <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="list-group collapse" id="semana5">
+                        <li class="list-group-item"><a href="./semana-5/Enunciado.txt" target="_blank">Enunciado</a></li>
+                        <li class="list-group-item"><a href="./semana-5/index.html" target="_blank">TP - Bootstrap (Readaptación del formulario de la semana 1)</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
-    <footer>
+    <!-- Tps Grupales -->
+    <div class="bg-primary text-white text-center py-4 mt-5">
+        <h1>Trabajos Grupales</h1>
+    </div>
+
+    <div class="container mt-4">
+        <nav>
+            <ul class="list-group">
+                <!-- Integrantes -->
+                <li class="list-group-item">
+                    <button class="btn btn-outline-primary w-100 text-start" data-bs-toggle="collapse" data-bs-target="#Integrantes" aria-expanded="false" aria-controls="Integrantes">
+                        Integrantes <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="list-group collapse" id="Integrantes">
+                        <li class="list-group-item">
+                            <a href="https://github.com/23carlosg" target="_blank" class="d-block">
+                                <i class="bi bi-github"></i> Carlos Gauto
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://github.com/cesarl94" target="_blank" class="d-block">
+                                <i class="bi bi-github"></i> César Lorenzon
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://github.com/TournierSebastian" target="_blank" class="d-block">
+                                <i class="bi bi-github"></i> Sebastián Tournier
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://github.com/Ulimb" target="_blank" class="d-block">
+                                <i class="bi bi-github"></i> Ulises Mijael Ben
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Semana próxima -->
+                <li class="list-group-item">
+                    <button class="btn btn-outline-primary w-100 text-start" data-bs-toggle="collapse" data-bs-target="#semana6" aria-expanded="false" aria-controls="semana6">
+                        Semana próxima <i class="bi bi-chevron-down"></i>
+                    </button>
+                    <ul class="list-group collapse" id="semana6">
+                        <li class="list-group-item"><a href="#" target="_blank">Enunciado(pendiente)</a></li>
+                        <li class="list-group-item"><a href="#" target="_blank">TP - Pendiente</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer class="text-center p-1 bg-dark mt-5 text-white">
         <p>© 2024 Curso Fullstack Developer CILSA</p>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
-
