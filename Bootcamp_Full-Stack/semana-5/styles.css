@@ -1,0 +1,16 @@
+/* Estilo de alto contraste */
+.high-contrast {
+    background-color: black;
+    color: yellow;
+}
+
+.high-contrast .form-control {
+    background-color: black;
+    color: yellow;
+}
+
+.high-contrast .btn-primary {
+    background-color: yellow;
+    color: black;
+    border-color: yellow;
+}
