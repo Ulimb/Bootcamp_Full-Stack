@@ -1,6 +1,7 @@
+/* -----NAVBAR----- */
 .navbar-custom {
     background-color: #593096; 
-    box-shadow: 0px 26px 45px rgb(0, 0, 0); /* Sombra más intensa */
+    box-shadow: 0px 26px 45px rgb(0, 0, 0); 
 
 }
 .navbar-brand {
@@ -59,4 +60,22 @@
 }
 .nav-link.ver-compra:hover {
     color: rgb(51, 46, 46);
+}
+
+/* banner ofertas */
+
+.bannerOfertas{
+    background-color: #E90271;
+    color: white;
+    font-family: Arial, sans-serif; 
+}
+
+/* -----Footer----- */
+.Footer{
+    background-color: #593096;
+    color: #ffffff; 
+    padding: 15px 0;
+    margin: 0;
+    box-shadow: 0px -26px 45px rgb(0, 0, 0); /* Sombra más intensa */
+
 }
