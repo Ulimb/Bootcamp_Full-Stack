@@ -60,3 +60,11 @@
 .nav-link.ver-compra:hover {
     color: rgb(51, 46, 46);
 }
+
+/* banner ofertas */
+
+.bannerOfertas{
+    background-color: #E90271;
+    color: white;
+    font-family: Arial, sans-serif; 
+}
