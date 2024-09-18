@@ -1,8 +1,7 @@
 const rutaNavBar = '../../Componentes/NavBar.html';
 
 document.addEventListener('DOMContentLoaded', () => {
-    cargarComponente('navbar-home', rutaNavBar);
-    cargarComponente('navbar-categorias', rutaNavBar);
+    cargarComponente('navbar-reutilizable', rutaNavBar);
 });
 
 function cargarComponente(elementId, ruta) {
