@@ -1,0 +1,13 @@
+.text-shadow {
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5); /* Sombra negra con un leve desenfoque */
+  }
+
+.separador {
+    border-right: 1px solid rgba(33, 37, 41, 1); /* Donde 33, 37, 41 es el valor RGB de "dark" en Bootstrap */
+}
+
+@media (max-width: 767px) {
+    .responsive-border {
+        border-right: none;
+    }
+}
