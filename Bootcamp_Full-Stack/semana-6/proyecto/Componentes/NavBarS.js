@@ -1,12 +1,14 @@
+const rutaNavBar = '../../Componentes/NavBar.html';
+
 document.addEventListener('DOMContentLoaded', () => {
-    cargarNavbar('navbar-home');
-    cargarNavbar('navbar-categorias');
+    cargarComponente('navbar-home', rutaNavBar);
+    cargarComponente('navbar-categorias', rutaNavBar);
 });
 
-function cargarNavbar(elementId) {
+function cargarComponente(elementId, ruta) {
     const elemento = document.getElementById(elementId);
     if (elemento) {
-        fetch('../../Componentes/NavBar.html')
+        fetch(ruta)
             .then(response => response.text())
             .then(template => {
                 elemento.innerHTML = template;
