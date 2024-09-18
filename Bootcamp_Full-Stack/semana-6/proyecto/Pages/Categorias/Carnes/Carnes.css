@@ -1,0 +1,31 @@
+
+.rounded-custom {
+    border-radius: 16px 0px 0px 16px; 
+    border-style: solid ;
+    border-width: 0 2px 0 0; /* Solo el borde derecho con 2px de ancho, ajusta el valor según sea necesario */
+    border-color: #A68ECF; /* Cambia este valor al color que desees */
+    
+  }
+  .rounded-custom-h2{
+    border-top-right-radius: 16px;
+  }
+
+  .d-custom-hidden{
+    display: flex; 
+}
+.d-custom-show{
+    display: none; 
+}
+  @media (max-width: 580px) { 
+    .d-custom-hidden  {
+        display: none; 
+    }
+
+    .d-custom-show{
+        display: block; 
+    }
+    .rounded-custom-h2{
+        border-top-left-radius: 0px;
+      }
+    
+}
