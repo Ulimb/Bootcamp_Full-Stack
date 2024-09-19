@@ -16,16 +16,46 @@
 .d-custom-show{
     display: none; 
 }
-  @media (max-width: 580px) { 
-    .d-custom-hidden  {
-        display: none; 
-    }
-
-    .d-custom-show{
-        display: block; 
-    }
-    .rounded-custom-h2{
-        border-top-left-radius: 0px;
-      }
-    
+.border-custom{
+  border-right-style: solid;
 }
+
+
+.img-ofertas {
+  position: relative; 
+}
+
+.price-ofertas {
+  position: absolute;
+  top: 2px; 
+  left: 44px;
+  color: white; 
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px; 
+}
+.price-original {
+  text-decoration: line-through;
+  color: gray; /* Cambia el color del precio original para que contraste con el precio con descuento */
+  font-size: 14px; /* Ajusta el tamaño según tus necesidades */
+}
+
+
+
+.quantity-container {
+  background-color: #007bff; /* Fondo azul */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-decrease, .btn-increase {
+  background-color: transparent;
+  color: white;
+  border-style: none;
+  font-size: 20px;
+}
+
