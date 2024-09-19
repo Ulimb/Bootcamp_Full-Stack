@@ -59,3 +59,19 @@
   font-size: 20px;
 }
 
+
+.Text-Ofertas{
+  position: absolute;
+  top: 30px;
+  z-index: 1px ;
+  color: #E90271;
+}
+
+@media (max-width: 767px) {
+  .border-custom{
+    border-right-style: none;
+    border-bottom-style: solid;
+
+  }
+}
+

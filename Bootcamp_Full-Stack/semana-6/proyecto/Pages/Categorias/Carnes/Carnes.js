@@ -1,5 +1,15 @@
 const productos = [
     {
+        nombre: 'Chorizo parrillero x KG',
+        descripcion: [
+            'Chorizo colorado de ternera.',
+            'El peso puede variar ligeramente.'
+        ],
+        precio: 5000,
+        imagen: '../../../imagenes/categorías/carnes/chorizos.jpg',
+        descuento: 25
+    },
+    {
         nombre: 'Lomo x KG',
         descripcion: [
             'Lomo de ternera.',
@@ -7,7 +17,7 @@ const productos = [
         ],
         precio: 8500,
         imagen: '../../../imagenes/categorías/carnes/lomo.jpg',
-        descuento: 20
+        descuento: 0
     },
     {
         nombre: 'Milanesas de pollo x KG',
@@ -18,11 +28,23 @@ const productos = [
         precio: 6000,
         imagen: '../../../imagenes/categorías/carnes/milanesas.jpg',
         descuento: 0
+    }, 
+    {
+        nombre: 'Carne picada común x KG',
+        descripcion: [
+            'Carne picada con alto contenido de grasa.',
+            'El peso puede variar ligeramente.'
+        ],
+        precio: 4000,
+        imagen: '../../../imagenes/categorías/carnes/picada.jpg',
+        descuento: 0
     }
+    
 ];
 document.addEventListener('DOMContentLoaded', () => {
     const productosContainer = document.getElementById('productos-container');
-    
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
     productosContainer.innerHTML = '';
 
     productos.forEach((producto, index) => {
@@ -34,6 +56,18 @@ document.addEventListener('DOMContentLoaded', () => {
             <p class="fw-bold">$${producto.precio.toFixed(2)}</p>
         `;
 
+        const imgProductoOferta = producto.descuento > 0 ?
+        ` 
+        <div class="col-12 col-sm-12 col-md-3 bg-secondary p-4 position-relative">
+                <img src="${producto.imagen}" class="img-fluid rounded-5 img-producto" alt="Imagen de${producto.nombre}">
+                <h4 class="Text-Ofertas">PRODUCTO EN OFERTA</h4>
+        </div> 
+        `
+        : ` 
+        <div class="col-12 col-sm-12 col-md-3 bg-secondary p-4">
+            <img src="${producto.imagen}" class="img-fluid rounded-5" alt="Imagen de ${producto.nombre}">        
+        </div> 
+        `
         const descuentoHTML = producto.descuento > 0 ? `
          <div class="row d-flex align-items-center h-25 p-2">
                             <div class="col-6 position-relative d-flex"> 
@@ -56,10 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
                 <div class="row border border-1 border-secondary">
-                    <div class="col-12 col-sm-12 col-md-3 bg-secondary p-4">
-                        <img src="${producto.imagen}" class="img-fluid rounded-5" alt="Imagen de ${producto.nombre}">
-                        
-                    </div> 
+                    ${imgProductoOferta}
                     <div class="col-12 col-sm-12 col-md-4 d-flex align-items-center justify-content-center border-custom border-1 border-secondary">
                         <div class="p-5 text-center">
                             ${producto.descripcion.map(linea => `<p class="mb-1">${linea}</p>`).join('')}
@@ -98,7 +129,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         productosContainer.innerHTML += productoHTML;
     });
-
+    const saveCartToLocalStorage = () => {
+        localStorage.setItem('cart', JSON.stringify(cart));
+    };
+    
     const addCartEventListeners = () => {
         document.querySelectorAll('.btn-add-cart').forEach(button => {
             button.addEventListener('click', (e) => {
@@ -108,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
                 cartBtnContainer.innerHTML = `
                     <div class="col-12 d-flex justify-content-center">
-                        <div class="bg-primary quantity-container d-flex align-items-center justify-content-between p-2 w-50">
+                        <div class="bg-primary quantity-container d-flex align-items-center justify-content-between p-2 w-60">
                             <p class="text-white mb-0">Unidades</p>
                             <div class="d-flex align-items-center">
                                 <button class="btn-decrease" data-index="${index}">-</button>
@@ -118,6 +152,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>
                 `;
+                cart.push({ ...productos[index], cantidad: 1 });
+                saveCartToLocalStorage();
     
                 const updateSubtotal = (units) => {
                     const newSubtotal = precioConDescuento * units;
@@ -132,6 +168,8 @@ document.addEventListener('DOMContentLoaded', () => {
                         currentUnits -= 1;
                         unitsElement.innerText = currentUnits;
                         updateSubtotal(currentUnits);  
+                        cart.find(item => item.nombre === productos[index].nombre).cantidad = currentUnits;
+
                     } else {
                         cartBtnContainer.innerHTML = `
                             <div class="col-12">
@@ -141,6 +179,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 </button>
                             </div>
                         `;
+                        cart = cart.filter(item => item.nombre !== productos[index].nombre);
+                        saveCartToLocalStorage();
                         addCartEventListeners();
                     }
                 });
@@ -151,6 +191,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     currentUnits += 1;
                     unitsElement.innerText = currentUnits;
                     updateSubtotal(currentUnits); // Actualizar subtotal
+
+                    cart.find(item => item.nombre === productos[index].nombre).cantidad = currentUnits;
+                    saveCartToLocalStorage();
                 });
             });
         });

@@ -18,8 +18,8 @@
 //     }
 // }
 
-const rutaNavBar = '../../Componentes/NavBar.html';  // Ruta del navbar
-const rutaFooter = '../../Componentes/Footer.html'; // Ruta del footer
+const rutaNavBar = '../../../Componentes/NavBar.html';  // Ruta del navbar
+const rutaFooter = '../../../Componentes/Footer.html'; // Ruta del footer
 
 document.addEventListener('DOMContentLoaded', () => {
     cargarComponente('navbar-reutilizable', rutaNavBar); // Cargar navbar
