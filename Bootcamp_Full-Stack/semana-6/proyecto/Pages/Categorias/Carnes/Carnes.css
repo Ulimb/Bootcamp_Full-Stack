@@ -1,0 +1,77 @@
+
+.rounded-custom {
+    border-radius: 16px 0px 0px 16px; 
+    border-style: solid ;
+    border-width: 0 2px 0 0; /* Solo el borde derecho con 2px de ancho, ajusta el valor según sea necesario */
+    border-color: #A68ECF; /* Cambia este valor al color que desees */
+    
+  }
+  .rounded-custom-h2{
+    border-top-right-radius: 16px;
+  }
+
+  .d-custom-hidden{
+    display: flex; 
+}
+.d-custom-show{
+    display: none; 
+}
+.border-custom{
+  border-right-style: solid;
+}
+
+
+.img-ofertas {
+  position: relative; 
+}
+
+.price-ofertas {
+  position: absolute;
+  top: 2px; 
+  left: 44px;
+  color: white; 
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px; 
+}
+.price-original {
+  text-decoration: line-through;
+  color: gray; /* Cambia el color del precio original para que contraste con el precio con descuento */
+  font-size: 14px; /* Ajusta el tamaño según tus necesidades */
+}
+
+
+
+.quantity-container {
+  background-color: #007bff; /* Fondo azul */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 8px; /* Bordes redondeados */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-decrease, .btn-increase {
+  background-color: transparent;
+  color: white;
+  border-style: none;
+  font-size: 20px;
+}
+
+
+.Text-Ofertas{
+  position: absolute;
+  top: 30px;
+  z-index: 1px ;
+  color: #E90271;
+}
+
+@media (max-width: 767px) {
+  .border-custom{
+    border-right-style: none;
+    border-bottom-style: solid;
+
+  }
+}
+
