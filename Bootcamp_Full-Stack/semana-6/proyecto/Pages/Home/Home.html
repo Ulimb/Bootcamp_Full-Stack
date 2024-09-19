@@ -15,58 +15,31 @@
 
 <body>
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg  navbar-custom" data-bs-theme="dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./Home.html">
-                <img src="../../imagenes/iconos/logo.png" alt="Logo" class="logo-img">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Ofertas</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav  navbar-shopping" >
-                    <li class="nav-item">
-                        <img src="../../imagenes/iconos/shopping.png" class="shopping-img" alt="Shopping Icon">
-                        <a class="nav-link ver-compra" href="#">Ver compra</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="navbar-reutilizable"></div>
     
     <!-- Banner principal -->
-    <div class="container-fluid text-center p-0">
+    <div class="container text-center">
         <div class="row align-items-center">
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 p-0">
                 <img src="../../imagenes/generales/EmpleadoA.jpg" class="img-fluid" alt="Fotografía de una empleada del supermercado sonriendo">
             </div>
             <div class="col-12 col-md-6 p-3">
                 <div class="d-flex flex-column gap-4">
-                    <div class="py-2">
-                        <h3 class="fw-bold text-wrap mb-2 fs-md-1">Supermercados la Estancia</h3>
-                        <p class="fw-semibold text-wrap mb-0 fs-md-4">El lugar donde encontrás todo lo que necesitás para tu día a día!</p>
+                    <div class="d-grid col-8 col-sm-8 col-md-12 col-lg-8 mx-auto">
+                        <h3 class="fw-bold text-wrap">Supermercados la Estancia</h3>
+                        <p class="fw-semibold text-wrap mb-0">El lugar donde encontrás todo lo que necesitás para tu día a día!</p>
                     </div>
                     
-                    <div class="d-grid col-8 col-sm-6 col-md-5 col-lg-4 mx-auto">
-                        <a href="../Categorias/Categorias.html" class="text-decoration-none">
-                            <button class="btn btn-primary rounded-3 fs-5" type="button">Ver catálogo</button>
-                        </a>
-                    </div>
+                    <a href="../Categorias/Categorias.html" class="text-decoration-none">
+                        <button class="btn btn-primary rounded-3 fs-5" type="button">Ver catálogo</button>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- banner ofertas -->
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div class="col-12 text-center bannerOfertas py-1 fs-1 fw-bold">
                 ¡OFERTONES!
@@ -75,7 +48,7 @@
     </div>
       
     <!-- banner secundario -->
-    <div class="container-fluid">
+    <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 text-center custom-padding">
                 <p class="responsive-text">
@@ -89,30 +62,11 @@
         </div>
     </div>
 
+    <script src="../../Componentes/NavBarS.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
-<footer class="Footer">
-   
-    <div class="container">
-        <div class="row text-center text-md-left">
-            <div class="col-lg-3 col-md-6"  >
-                <p class="navbar-brand" style="font-size: 18px; color: #ffffff; font-weight: bold;">
-                    Supermercados<br>
-                    La Estancia
-                </p>            </div>
-            <div class="col-lg-3 col-md-6 ">
-                <p class="mb-3" style="font-size: 14px; color: #e9ecef;">Calle de los Lapachos 5641,<br>CABA</p>
-            </div>
-            <div class="col-lg-3 col-md-6 ">
-                <p class="mb-3" style="font-size: 14px; color: #e9ecef;">Escríbenos al WhatsApp: <br/><img src="../../imagenes/iconos/whatsapp.png" style="width: 15x; height: 15px;"> <a href="https://wa.me/54911998877661" target="_blank" style="color: #ffffff;">+54911 998877661</a>
-                </p>
+<!-- Footer -->
+<div id="footer-reutilizable"></div>
 
-            </div>
-            <div class="col-lg-3 col-md-6 ">
-                <p class="mb-3" style="font-size: 14px; color: #e9ecef; padding-top: 10px;">supermercados@laestancia.com.ar</p>
-            </div>
-        </div>
-    </div>
-</footer>
 </html>
