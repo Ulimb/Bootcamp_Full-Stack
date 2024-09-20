@@ -6,7 +6,7 @@ const productos = [
             'El peso puede variar ligeramente.'
         ],
         precio: 5000,
-        imagen: '../../../imagenes/categorías/carnes/chorizos.jpg',
+        imagen: '../../imagenes/categorías/carnes/chorizos.jpg',
         descuento: 25
     },
     {
@@ -16,7 +16,7 @@ const productos = [
             'El peso puede variar ligeramente.'
         ],
         precio: 8500,
-        imagen: '../../../imagenes/categorías/carnes/lomo.jpg',
+        imagen: '../../imagenes/categorías/carnes/lomo.jpg',
         descuento: 0
     },
     {
@@ -26,7 +26,7 @@ const productos = [
             'El peso puede variar ligeramente.'
         ],
         precio: 6000,
-        imagen: '../../../imagenes/categorías/carnes/milanesas.jpg',
+        imagen: '../../imagenes/categorías/carnes/milanesas.jpg',
         descuento: 0
     }, 
     {
@@ -36,7 +36,7 @@ const productos = [
             'El peso puede variar ligeramente.'
         ],
         precio: 4000,
-        imagen: '../../../imagenes/categorías/carnes/picada.jpg',
+        imagen: '../../imagenes/categorías/carnes/picada.jpg',
         descuento: 0
     }
     
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const descuentoHTML = producto.descuento > 0 ? `
          <div class="row d-flex align-items-center h-25 p-2">
                             <div class="col-6 position-relative d-flex"> 
-                                <img src="../../../imagenes/iconos/oferta.png" class="img-ofertas" alt="Icono oferta">
+                                <img src="../../imagenes/iconos/oferta.png" class="img-ofertas" alt="Icono oferta">
                                 <p class="price-ofertas">${producto.descuento}%</p>
                             </div>
                             <div class="col-6" id="precio-producto-${index}">
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <div class="row d-flex align-items-center h-25 p-2" id="cart-btn-${index}">
                             <div class="col-12">
                                 <button class="bg-primary w-100 d-flex align-items-center justify-content-start btn-add-cart" data-index="${index}">
-                                    <img src="../../../imagenes/iconos/shopping.png" width="25px" height="25px" class="me-2">
+                                    <img src="../../imagenes/iconos/shopping.png" width="25px" height="25px" class="me-2">
                                     <p class="mb-0 flex-grow-1 text-center text-white">Agregar al Carrito</p>
                                 </button>
                             </div>
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         cartBtnContainer.innerHTML = `
                             <div class="col-12">
                                 <button class="bg-primary w-100 d-flex align-items-center justify-content-start btn-add-cart" data-index="${index}">
-                                    <img src="../../../imagenes/iconos/shopping.png" width="25px" height="25px" class="me-2">
+                                    <img src="../../imagenes/iconos/shopping.png" width="25px" height="25px" class="me-2">
                                     <p class="mb-0 flex-grow-1 text-center text-white">Agregar al Carrito</p>
                                 </button>
                             </div>
