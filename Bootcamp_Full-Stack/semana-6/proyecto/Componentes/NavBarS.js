@@ -22,8 +22,13 @@
 // const rutaNavBar = '../../../Componentes/NavBar.html';  // Ruta del navbar
 // const rutaFooter = '../../../Componentes/Footer.html'; // Ruta del footer
 
-const rutaNavBar = '/semana-6/proyecto/Componentes/NavBar.html'; // Ruta del navbar
-const rutaFooter = '/semana-6/proyecto/Componentes/Footer.html'; // Ruta del footer
+
+
+// const rutaNavBar = '/semana-6/proyecto/Componentes/NavBar.html'; 
+// const rutaFooter = '/semana-6/proyecto/Componentes/Footer.html'; 
+
+const rutaNavBar = '/Bootcamp_Full-Stack/semana-6/proyecto/Componentes/NavBar.html'; 
+const rutaFooter = '/Bootcamp_Full-Stack/semana-6/proyecto/Componentes/Footer.html'; 
 
 document.addEventListener('DOMContentLoaded', () => {
     cargarComponente('navbar-reutilizable', rutaNavBar); // Cargar navbar
