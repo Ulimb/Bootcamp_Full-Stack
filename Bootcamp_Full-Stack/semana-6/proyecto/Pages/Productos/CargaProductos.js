@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const productosContainer = document.getElementById('productos-container');
     const categoria = window.location.pathname.split('/').pop().split('.')[0];
-    const productos = productosPorCategoria[categoria]; // obtiene productos por categoría
+
+    alert(categoria)
+    const productos = productosPorCategoria[categoria]; 
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
     if (!productos) {
