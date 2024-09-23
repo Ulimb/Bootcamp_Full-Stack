@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../../Css/bootstrap.min.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="../Global.css">
+    <link rel="stylesheet" href="../../Global.css">
     <link rel="stylesheet" href="../Carrito.css">
 
 </head>
 <body>
     <h2 class="mb-4 text-center">Carrito de Compras</h2>
 
-    <div class="container my-4 border border-dark rounded shadow">
-        <table class="table" >
-            <thead class="bg-primary">
-                <tr>
+    <div class="container my-4 border border-dark rounded shadow p-0 "  > 
+        <table class="w-100  rounded-top-3 " >
+            <thead class="bg-primary text-white" >
+                <tr class="text-center">
                     <th>Producto</th>
-                    <th>Unidades</th>
-                    <th>Precio Unitario</th>
-                    <th>Subtotal</th>
+                    <th class="border-custom">Unidades</th>
+                    <th class="border-custom"> Precio Unitario</th>
+                    <th class="border-custom">Subtotal</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>
-                        <div class="d-flex align-items-center">
-                            <img src="../../../imagenes/categorías/carnes/chorizos.jpg" class="img-fluid" style="max-height: 70px;">
-                            <span class="fw-bold text-hidden">Producto 1</span>
+                <tr class="text-center">
+                    <td class="d-flex text-center align-items-center p-0">
+                        <div class="d-flex align-items-center bg-secondary p-2">
+                            <img src="../../../imagenes/categorías/carnes/chorizos.jpg" class="img-fluid rounded-2" style="max-height: 70px;">
                         </div>
+                        <p class="fw-bold text-hidden m-0">Producto 1</p>
+
                     </td>
-                    <td>2</td>
-                    <td>$10.00</td>
-                    <td>$20.00</td>
+                    <td class="border-custom">2</td>
+                    <td class="border-custom">$10.00</td>
+                    <td class="border-custom">$20.00</td>
+                </tr>
+                <tr class="text-center  border-bottom"></tr>
+                    <td class="d-flex text-center align-items-center p-0">
+                        <div class="d-flex align-items-center bg-secondary p-2">
+                            <img src="../../../imagenes/categorías/carnes/chorizos.jpg" class="img-fluid rounded-2" style="max-height: 70px;">
+                        </div>
+                        <p class="fw-bold text-hidden m-0">Producto 1</p>
+
+                    </td>
+                    <td class="border-custom">2</td>
+                    <td class="border-custom">$10.00</td>
+                    <td class="border-custom">$20.00</td>
                 </tr>
             </tbody>
         </table>
