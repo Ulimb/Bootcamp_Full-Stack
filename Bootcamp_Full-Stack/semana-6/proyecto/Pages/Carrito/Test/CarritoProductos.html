@@ -1,56 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../../../Css/bootstrap.min.css" rel="stylesheet"> 
+    <link href="../../../Css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../Global.css">
     <link rel="stylesheet" href="../Carrito.css">
 
 </head>
+
 <body>
     <h2 class="mb-4 text-center">Carrito de Compras</h2>
-
-    <div class="container my-4 border border-dark rounded shadow p-0 "  > 
-        <table class="w-100  rounded-top-3 " >
-            <thead class="bg-primary text-white" >
+    
+    <div class="container my-4 shadow p-0"> 
+        <table class="w-100  rounded-top-3 border border-dark rounded ">
+            <thead class="bg-primary text-white">
                 <tr class="text-center">
                     <th>Producto</th>
                     <th class="border-custom">Unidades</th>
                     <th class="border-custom"> Precio Unitario</th>
                     <th class="border-custom">Subtotal</th>
+
                 </tr>
             </thead>
             <tbody>
                 <tr class="text-center">
                     <td class="d-flex text-center align-items-center p-0">
                         <div class="d-flex align-items-center bg-secondary p-2">
-                            <img src="../../../imagenes/categorías/carnes/chorizos.jpg" class="img-fluid rounded-2" style="max-height: 70px;">
+                            <img src="../../../imagenes/categorías/carnes/chorizos.jpg" class="img-fluid rounded-2"
+                                style="max-height: 120px;">
                         </div>
-                        <p class="fw-bold text-hidden m-0">Producto 1</p>
+                        <h5 class="fw-bold text-hidden m-0">Producto 1</h5>
+
+                        <button class="btn btn-danger custom-btn">Eliminar</button>
 
                     </td>
-                    <td class="border-custom">2</td>
+                    <td class="border-custom  bg-secondary">2</td>
                     <td class="border-custom">$10.00</td>
-                    <td class="border-custom">$20.00</td>
+                    <td class="border-custom  bg-secondary">$20.00</td>
                 </tr>
-                <tr class="text-center  border-bottom"></tr>
-                    <td class="d-flex text-center align-items-center p-0">
-                        <div class="d-flex align-items-center bg-secondary p-2">
-                            <img src="../../../imagenes/categorías/carnes/chorizos.jpg" class="img-fluid rounded-2" style="max-height: 70px;">
-                        </div>
-                        <p class="fw-bold text-hidden m-0">Producto 1</p>
-
-                    </td>
-                    <td class="border-custom">2</td>
-                    <td class="border-custom">$10.00</td>
-                    <td class="border-custom">$20.00</td>
-                </tr>
-            </tbody>
         </table>
+        
+        <div class="d-flex mt-4">
+            <div class="d-flex align-items-center justify-content-between border border-dark rounded-start-5 p-0"
+                style="width: 50%;">
+                <h4 class="mb-0 p-3">Descuento totales</h4>
+                <p class="mb-0 bg-secondary p-4">1500$</p>
+            </div>
+            <div class="d-flex align-items-center justify-content-between border border-dark rounded-end-5 p-0"
+                style="width: 50%;">
+                <h4 class="mb-0 p-3">Total</h4>
+                <p class="mb-0 bg-secondary p-4 rounded-end-5">2000$</p>
+            </div>
+        </div>
+      
+    </div>
+  
+    <div class="text-center mt-4">
+        <a class="bg-primary p-3 rounded-4 text-white px-5 border-0 text-decoration-none">
+            <img src="../../../imagenes/iconos/credit-card.png" width="30px" height="30px" class="mx-2"> 
+            Continuar Compra 
+        </a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
