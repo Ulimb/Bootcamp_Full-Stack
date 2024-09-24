@@ -190,7 +190,53 @@ const productosPorCategoria = {
             imagen: '../../imagenes/categorías/vinos/terrazas.jpg',
             descuento: 0
         }
-    ],
+    ], Ofertas: [
+        {
+            nombre: 'Chorizo parrillero x KG',
+            descripcion: [
+                'Chorizo colorado de ternera.',
+                'El peso puede variar ligeramente.'
+            ],
+            precio: 5000,
+            imagen: '../../imagenes/categorías/carnes/chorizos.jpg',
+            descuento: 25
+        },
+        {
+            nombre: 'Coca Cola',
+            descripcion: ['Gaseosa con azucar.', 'Botella de 1 litro.'],
+            precio: 2300,
+            imagen: '../../imagenes/categorías/gaseosas/cocacola.jpg',
+            descuento: 10
+        },
+        {
+            nombre: 'Manteca',
+            descripcion: ['Manteca SarCor', 'Contiene 200g'],
+            precio: 3000,
+            imagen: '../../imagenes/categorías/lacteos/manteca.jpg',
+            descuento: 20
+        },
+        {
+            nombre: 'Desinfectante',
+            descripcion: ['Desinfectante Poett', 'Botella de 900ml'],
+            precio: 2500,
+            imagen: '../../imagenes/categorías/limpieza/desinfectante.jpg',
+            descuento: 30
+        }, 
+        {
+            nombre: 'Cebolla x KG',
+            descripcion: ['Cebolla Comun 🧅', 'El peso puede variar ligeramente.'],
+            precio: 1500,
+            imagen: '../../imagenes/categorías/verduleria/cebolla.jpg',
+            descuento: 25
+        },
+        {
+            nombre: 'Magnolia',
+            descripcion: ['Vino tinto Cabernet Sauvignon.', 'Reserva 2021. Origen Mendoza'],
+            precio: 6000,
+            imagen: '../../imagenes/categorías/vinos/magnolia.jpg',
+            descuento: 15
+        },
+    ]
 
 
 };
