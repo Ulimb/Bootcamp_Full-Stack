@@ -58,7 +58,17 @@
 .custom-padding {
     padding: 3rem; /* Equivalente a p-5 */
 }
+@media (max-width: 768px) {
+.navbar-custom{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
 
+.footer-custom{
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+}
 /* Pantallas extra pequeñas (xs, < 576px) */
 @media (max-width: 575.98px) {
     .responsive-text {
@@ -81,6 +91,7 @@
 
 /* Pantallas medianas (md, ≥ 768px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
+
     .responsive-text {
         font-size: 1.35rem;
     }

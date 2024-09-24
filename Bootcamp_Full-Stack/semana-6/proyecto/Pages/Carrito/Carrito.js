@@ -16,7 +16,7 @@ function showCartWithProducts(cart) {
                     <div class="d-flex align-items-center bg-secondary p-2">
                         <img src="${product.imagen}" class="img-fluid rounded-2" style="max-height: 120px;">
                     </div>
-                    <h5 class="fw-bold text-hidden m-0 pe-2">${product.nombre}</h5>
+                    <h5 class="fw-bold text-hidden m-0 ">${product.nombre}</h5>
                     <button class="btn btn-danger custom-btn" onclick="removeFromCart(${cart.indexOf(product)})">Eliminar</button>
                 </td>
                 <td class="border-custom bg-secondary">${product.cantidad}</td>
@@ -33,30 +33,32 @@ function showCartWithProducts(cart) {
         <div class="container py-4 responsive-text">
             <h2>Ver Compra</h2>
         </div>
-        <div class="container my-4 shadow p-0">
+        <div class="container my-4 ">
             <table class="w-100 border border-dark ">
-                <thead class="bg-primary text-white">
+                <thead class="bg-primary text-white  responsive-text">
                     <tr class="text-center ">
-                        <th class="p-1"><h5>Producto</h5></th>
-                        <th class="border-custom p-1"><h5>Unidades</h5></th>
-                        <th class="border-custom p-1"><h5>Precio Unitario</h5></th>
-                        <th class="border-custom p-1"><h5>Subtotal</h5></th>
+                        <th >Producto</th>
+                        <th class="border-custom">Unidades</th>
+                        <th class="border-custom">Precio Unitario</th>
+                        <th class="border-custom">Subtotal</th>
                     </tr>
                 </thead>
                 <tbody>
                     ${productRows}
                 </tbody>
             </table>
-            <div class="d-flex mt-4">
-                <div class="d-flex align-items-center justify-content-between border border-dark rounded-start-5 p-0" style="width: 50%;">
-                    <h4 class="mb-0 p-3">Descuento total</h4>
-                    <p class="mb-0 bg-secondary p-4">$${totalDiscount.toFixed(1)}</p>
-                </div>
-                <div class="d-flex align-items-center justify-content-between border border-dark rounded-end-5 p-0" style="width: 50%;">
-                    <h4 class="mb-0 p-3">Total</h4>
-                    <p class="mb-0 bg-secondary p-4 rounded-end-5">$${totalPrice.toFixed(1)}</p>
-                </div>
+   <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6 col-12 d-flex align-items-center justify-content-between border border-dark radius-custom-start p-0">
+                <h4 class="mb-0 ps-1">Descuento total</h4>
+                <p class="mb-0 bg-secondary p-4 text-center w-50">$${totalDiscount.toFixed(1)}</p>
             </div>
+            <div class="col-md-6 col-12 d-flex align-items-center justify-content-between border border-dark radius-custom-end p-0">
+                <h4 class="mb-0 ps-2 ">Total</h4>
+                <p class="mb-0 bg-secondary p-4 text-center w-50">$${totalPrice.toFixed(1)}</p>
+            </div>
+        </div>
+    </div>
             <div class="text-center mt-4">
                 <a  href="../Pagos/MedioDePago.html" class="bg-primary p-3 rounded-4 text-white px-5 border-0 text-decoration-none">
                     <img src="../../imagenes/iconos/credit-card.png" width="30px" height="30px" class="mx-2"> 
