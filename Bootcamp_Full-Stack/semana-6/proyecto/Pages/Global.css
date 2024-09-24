@@ -95,7 +95,7 @@
         font-size: 1.75rem;
     }
     .custom-padding {
-        padding: 2rem !important; 
+        padding: 1.5rem !important; 
     }
 }
 
@@ -105,14 +105,14 @@
         font-size: 2rem;
     }
     .custom-padding {
-        padding: 2.5rem !important; 
+        padding: 2rem !important; 
     }
 }
 
 /* Pantallas extra extra grandes (xxl, ≥ 1400px) */
 @media (min-width: 1400px) {
     .responsive-text {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .custom-padding {
         padding: 3rem !important; 
