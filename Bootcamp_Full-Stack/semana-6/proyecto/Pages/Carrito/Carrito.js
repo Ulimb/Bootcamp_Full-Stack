@@ -58,7 +58,7 @@ function showCartWithProducts(cart) {
                 </div>
             </div>
             <div class="text-center mt-4">
-                <a  href="#" class="bg-primary p-3 rounded-4 text-white px-5 border-0 text-decoration-none">
+                <a  href="../Pagos/MedioDePago.html" class="bg-primary p-3 rounded-4 text-white px-5 border-0 text-decoration-none">
                     <img src="../../imagenes/iconos/credit-card.png" width="30px" height="30px" class="mx-2"> 
                     Continuar Compra 
                 </a>
