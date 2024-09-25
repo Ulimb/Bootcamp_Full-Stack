@@ -1,5 +1,92 @@
-.bannerOfertas{
-    background-color: #E90271;
+.bannerOfertas {
+    background-color: #e90271;
     color: white;
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --ofertas-left: -26%;
+}
+
+#ofertas-container {
+    position: relative;
+    left: var(--ofertas-left);
+}
+
+#oferta-producto {
+    position: relative;
+    border-color: #e90271 !important;
+}
+
+.imagen-atras {
+    z-index: 1;
+}
+
+#gradiente {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 30%;
+}
+
+.titulo {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    color: #ffffff;
+    font-size: 1vw;
+}
+
+#cuadrito-descuento {
+    position: absolute;
+    left: 4%;
+    top: 86%;
+    z-index: 2;
+    width: 22%;
+    height: 11%;
+    background-color: #e90271;
+}
+
+.texto-descuento {
+    position: absolute;
+    left: 0%;
+    top: -8%;
+    z-index: 2;
+    width: 100%;
+    color: #ffffff;
+    font-size: 1.3vw;
+}
+
+.precio-antes {
+    position: absolute;
+    left: -4%;
+    top: 80%;
+    z-index: 2;
+    width: 100%;
+    color: #000;
+    font-size: 1.3vw;
+}
+
+.precio-despues {
+    position: absolute;
+    left: -4%;
+    top: 88%;
+    z-index: 2;
+    width: 100%;
+    color: #000;
+    font-size: 1.3vw;
+    letter-spacing: -1px;
+}
+
+#tachonado {
+    position: absolute;
+    left: 75%;
+    top: 86%;
+    z-index: 2;
+    width: 22%;
+    height: 0.5%;
+    background-color: #e90271;
+    transform: rotate(10deg);
 }
