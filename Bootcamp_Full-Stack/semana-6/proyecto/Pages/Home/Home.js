@@ -1,17 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
     const productosContainer = document.getElementById("ofertas-container");
 
-    // const productosConDescuento = Object.values(productosPorCategoria)
-    //     .flat() // Une todos los arrays de productos de cada categoría en uno solo
-    //     .filter((producto) => producto.descuento > 0); // Filtra productos con descuento mayor a 0
+    const productosConDescuento = Object.values(productosPorCategoria)
+        .flat() // Une todos los arrays de productos de cada categoría en uno solo
+        .filter((producto) => producto.descuento > 0); // Filtra productos con descuento mayor a 0
 
-    // // Algoritmo de Fisher-Yates para mezclar aleatoriamente el array
-    // for (let i = productosConDescuento.length - 1; i > 0; i--) {
-    //     const j = Math.floor(Math.random() * (i + 1));
-    //     [productosConDescuento[i], productosConDescuento[j]] = [productosConDescuento[j], productosConDescuento[i]];
-    // }
-
-    const productosConDescuento = productosPorCategoria["Ofertas"];
+    // Algoritmo de Fisher-Yates para mezclar aleatoriamente el array
+    for (let i = productosConDescuento.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [productosConDescuento[i], productosConDescuento[j]] = [productosConDescuento[j], productosConDescuento[i]];
+    }
 
     productosConDescuento.push(productosConDescuento[0], productosConDescuento[1], productosConDescuento[2], productosConDescuento[3]);
 
