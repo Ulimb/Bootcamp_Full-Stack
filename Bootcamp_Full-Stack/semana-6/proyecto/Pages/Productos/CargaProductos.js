@@ -1,6 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     const productosContainer = document.getElementById("productos-container");
-    const categoria = window.location.pathname.split("/").pop().split(".")[0];
+
+    const categoria = new URLSearchParams(window.location.search).get("Categoria");
+
+    const breadcrumInicial = document.getElementById("breadcrum-inicio");
+    const breadcrumFinal = document.getElementById("breadcrum-final");
+    if (categoria == "Ofertas") {
+        breadcrumInicial.outerHTML = "";
+        breadcrumFinal.innerHTML = "Ofertas";
+    } else {
+        breadcrumFinal.innerHTML = `/ ${categoria}`;
+    }
 
     let productos;
     if (categoria == "Ofertas") {
@@ -10,6 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
         productos = productosPorCategoria[categoria];
     }
+
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     if (!productos) {

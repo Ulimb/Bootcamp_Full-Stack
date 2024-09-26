@@ -1,13 +1,13 @@
-const cart = JSON.parse(localStorage.getItem('cart')) || [];
+const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function showCartWithProducts(cart) {
-    const contentDiv = document.getElementById('content');
-    let productRows = '';
+    const contentDiv = document.getElementById("content");
+    let productRows = "";
     let totalDiscount = 0;
     let totalPrice = 0;
 
     cart.forEach((product) => {
-        const priceAfterDiscount = product.precio - (product.precio * product.descuento / 100);
+        const priceAfterDiscount = product.precio - (product.precio * product.descuento) / 100;
         const subtotal = priceAfterDiscount * product.cantidad;
 
         productRows += `
@@ -25,11 +25,11 @@ function showCartWithProducts(cart) {
             </tr>
         `;
 
-        totalDiscount += product.precio * product.descuento / 100 * product.cantidad;
+        totalDiscount += ((product.precio * product.descuento) / 100) * product.cantidad;
         totalPrice += subtotal;
     });
 
-    contentDiv.innerHTML = `
+    contentDiv.outerHTML = `
         <div class="container py-4 responsive-text">
             <h2>Ver Compra</h2>
         </div>
@@ -71,7 +71,7 @@ function showCartWithProducts(cart) {
 
 function removeFromCart(index) {
     cart.splice(index, 1);
-    localStorage.setItem('cart', JSON.stringify(cart));
+    localStorage.setItem("cart", JSON.stringify(cart));
     if (cart.length === 0) {
         showEmptyCart();
     } else {
@@ -80,7 +80,7 @@ function removeFromCart(index) {
 }
 
 function showEmptyCart() {
-    const contentDiv = document.getElementById('content');
+    const contentDiv = document.getElementById("content");
     contentDiv.innerHTML = `
         <div id="navbar-reutilizable"></div>
         <div class="container py-4 responsive-text">

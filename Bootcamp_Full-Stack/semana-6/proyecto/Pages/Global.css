@@ -1,15 +1,20 @@
-.footer-custom{
-    box-shadow: 0px -26px 45px rgb(0, 0, 0);
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
+.footer-custom {
+    box-shadow: 0px 0px 40px 33px rgba(0, 0, 0, 0.8);
 }
 /* -----NAVBAR----- */
 .navbar-custom {
-    box-shadow: 0px 26px 45px rgb(0, 0, 0); 
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 30px;
-} 
+    box-shadow: 0px 0px 40px 33px rgba(0, 0, 0, 0.8);
+}
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    main {
+        flex: 1;
+    }
+}
 
 .logo-img {
     display: block;
@@ -17,17 +22,15 @@
     padding: 0;
     width: 140px;
     height: 65px;
-   
 }
 
-.shopping-img{
+.shopping-img {
     width: 20px;
     height: 20px;
     filter: invert(1) grayscale(1) brightness(0) contrast(1);
-    
 }
 
-.navbar-shopping{
+.navbar-shopping {
     background-color: white;
     border-radius: 10px;
     max-width: 160px;
@@ -35,10 +38,9 @@
 
 .nav-item {
     display: flex;
-    align-items: center; 
-    gap: 5px; 
+    align-items: center;
+    gap: 5px;
     margin: 5px 10px 5px 13px;
-
 }
 
 .shopping-img {
@@ -46,8 +48,6 @@
     height: 25px;
     filter: invert(1) grayscale(1) brightness(0) contrast(1);
 }
-
-
 
 /* Medias Queries */
 
@@ -59,15 +59,15 @@
     padding: 3rem; /* Equivalente a p-5 */
 }
 @media (max-width: 768px) {
-.navbar-custom{
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-}
+    .navbar-custom {
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
 
-.footer-custom{
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
-}
+    .footer-custom {
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+    }
 }
 /* Pantallas extra pequeñas (xs, < 576px) */
 @media (max-width: 575.98px) {
@@ -75,7 +75,7 @@
         font-size: 1.5rem;
     }
     .custom-padding {
-        padding: 1rem !important; 
+        padding: 1rem !important;
     }
 }
 
@@ -85,18 +85,17 @@
         font-size: 1.5rem;
     }
     .custom-padding {
-        padding: 1.25rem !important; 
+        padding: 1.25rem !important;
     }
 }
 
 /* Pantallas medianas (md, ≥ 768px) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-
     .responsive-text {
         font-size: 1.35rem;
     }
     .custom-padding {
-        padding: 1.5rem !important; 
+        padding: 1.5rem !important;
     }
 }
 
@@ -106,7 +105,7 @@
         font-size: 1.75rem;
     }
     .custom-padding {
-        padding: 1.5rem !important; 
+        padding: 1.5rem !important;
     }
 }
 
@@ -116,7 +115,7 @@
         font-size: 2rem;
     }
     .custom-padding {
-        padding: 2rem !important; 
+        padding: 2rem !important;
     }
 }
 
@@ -126,6 +125,6 @@
         font-size: 2rem;
     }
     .custom-padding {
-        padding: 3rem !important; 
+        padding: 3rem !important;
     }
 }
