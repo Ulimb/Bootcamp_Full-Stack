@@ -29,7 +29,7 @@ function showCartWithProducts(cart) {
         totalPrice += subtotal;
     });
 
-    contentDiv.outerHTML = `
+    contentDiv.innerHTML = `
         <div class="container py-4 responsive-text">
             <h2>Ver Compra</h2>
         </div>
