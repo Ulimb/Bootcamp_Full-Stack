@@ -1,23 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
     const productosContainer = document.getElementById("productos-container");
-
-    const categoria = new URLSearchParams(window.location.search).get("Categoria");
-
     const breadcrumInicial = document.getElementById("breadcrum-inicio");
     const breadcrumFinal = document.getElementById("breadcrum-final");
+
+    const categoria = new URLSearchParams(window.location.search).get("Categoria");
+    let productos;
+
     if (categoria == "Ofertas") {
         breadcrumInicial.outerHTML = "";
         breadcrumFinal.innerHTML = "Ofertas";
-    } else {
-        breadcrumFinal.innerHTML = `/ ${categoria}`;
-    }
 
-    let productos;
-    if (categoria == "Ofertas") {
         productos = Object.values(productosPorCategoria)
             .flat() // Une todos los arrays de productos de cada categoría en uno solo
             .filter((producto) => producto.descuento > 0); // Filtra productos con descuento mayor a 0
     } else {
+        breadcrumFinal.innerHTML = `/ ${categoria}`;
+
         productos = productosPorCategoria[categoria];
     }
 

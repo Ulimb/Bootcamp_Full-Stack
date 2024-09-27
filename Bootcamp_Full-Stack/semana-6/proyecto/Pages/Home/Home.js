@@ -80,9 +80,9 @@ document.addEventListener("DOMContentLoaded", () => {
         leftPrev = productoId++ * 0.25;
         leftPost = productoId * 0.25;
 
-        setTimeout(triggerEvent, 5000);
+        setTimeout(triggerEvent, 3000);
     }
 
-    // Configura el timer para que dispare el evento después de 5 segundos (5000 ms)
-    setTimeout(triggerEvent, 5000);
+    // Configura el timer para que dispare el evento después de 5 segundos (3000 ms)
+    setTimeout(triggerEvent, 3000);
 });
