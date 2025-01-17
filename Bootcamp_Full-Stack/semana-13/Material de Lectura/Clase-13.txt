@@ -1,0 +1,13 @@
+https://www.youtube.com/watch?v=p8r_5-UJKQI
+
+Server basico con NodeJS: Repositorio
+https://github.com/dhuertas90/bootcamp-nodejs-basico
+
+Página simple con Express: Repositorio
+https://github.com/dhuertas90/bootcamp-express-simple
+
+Concepto de rutas con Express: Respositorio
+https://github.com/dhuertas90/bootcamp-express-rutas
+
+Motor de plantillas EJS con Express: Repositorio
+https://github.com/dhuertas90/bootcamp-express-ejs

@@ -1,0 +1,7 @@
+https://moodle.cilsa.org/mod/page/view.php?id=7628
+
+
+Comandos básicos en Vim: https://www.arsys.es/blog/comandos-vim
+
+
+git - la guía sencilla: https://rogerdudler.github.io/git-guide/index.es.html

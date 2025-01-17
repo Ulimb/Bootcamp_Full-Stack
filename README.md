@@ -32,6 +32,23 @@ El curso está dividido en **tres partes**, y cada semana tiene su propia carpet
 
 ---
 
+## 👥 **Equipo de trabajo**
+Durante el curso, realicé trabajos grupales con mis compañeros:
+- [Carlos Gauto](https://github.com/23carlosg)
+- [César Lorenzon](https://github.com/cesarl94)
+- [Sebastián Tournier](https://github.com/TournierSebastian)
+- [Ulises Mijael Ben](https://github.com/Ulimb) 
+
+---
+
+## 🌐 **Página Web del Repositorio**
+Puedes visitar el repositorio hospedado en Vercel: [🔗 Vercel](https://bootcamp-full-stack.vercel.app/).
+
+## 🌐 **Repositorio del Proyecto Final**
+[🔗 Planify](https://github.com/cesarl94/planify)
+
+---
+
 ## 🛠️ **Modalidad y características**
 - Modalidad: **Online** 📡
 - Clases sincrónicas por MS Teams y recursos asincrónicos en Moodle.
@@ -51,20 +68,6 @@ El curso está dividido en **tres partes**, y cada semana tiene su propia carpet
    Uso efectivo de control de versiones y estándares de la industria.  
 5. **Preparar para el mercado laboral:**  
    Entrenamiento en entrevistas, empleabilidad y creación de un perfil profesional estratégico.  
-
----
-
-## 👥 **Equipo de trabajo**
-Durante el curso, realicé trabajos grupales con mis compañeros:
-- [Carlos Gauto](https://github.com/23carlosg)
-- [César Lorenzon](https://github.com/cesarl94)
-- [Sebastián Tournier](https://github.com/TournierSebastian)
-- [Ulises Mijael Ben](https://github.com/Ulimb) 
-
----
-
-## 🌐 **Página Web del Repositorio**
-Puedes visitar el repositorio hospedado en Vercel: [🔗 Vercel](https://bootcamp-full-stack.vercel.app/).
 
 ---
 

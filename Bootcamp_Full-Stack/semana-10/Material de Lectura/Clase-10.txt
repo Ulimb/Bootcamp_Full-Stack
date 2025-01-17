@@ -1,0 +1,20 @@
+https://www.youtube.com/watch?v=ofhJFqUAUjk
+
+Primeros pasos con bases de datos relacionales: https://www.youtube.com/watch?v=lubcIdVCbo8
+
+Incorporación de condiciones (Videos):
+Bases de Datos: SQL And, Or, Not y Order By: https://www.youtube.com/watch?v=oPHH9g8eSrE
+Bases de Datos: SQL Where y condiciones: https://www.youtube.com/watch?v=gymFibOYv4U
+
+
+
+Insertar, actualizar y eliminar (Videos)
+Bases de Datos: Insert, Update y Delete: https://www.youtube.com/watch?v=Iz_O03r0nDU
+
+
+Pruebas con tablas en W3Schools (en Ingles): https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_columns
+
+Diagramas entidad relación
+Tutorial - Diagrama Entidad-Relación (ER): https://www.youtube.com/watch?v=TKuxYHb-Hvc
+
+Tutorial - Diagrama Entidad-Relación (ER) Parte 2: https://www.youtube.com/watch?v=jshi9VCTm7g
