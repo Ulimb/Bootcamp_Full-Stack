@@ -2,6 +2,9 @@
 
 ¡Bienvenido a mi repositorio del **[Curso Fullstack Developer](https://www.cilsa.org/paginas_php/ot/13000/13070/becas-desarrollar-inclusion.html)** impartido por CILSA! 🌟 Este espacio está diseñado para documentar y respaldar todo lo aprendido a lo largo de este bootcamp intensivo, organizando el material y los ejercicios resueltos semana a semana. 
 
+## 🌐 **Repositorio del Proyecto Final**
+[🔗 Planify](https://github.com/cesarl94/planify)
+
 ---
 
 ## 📅 **Organización del repositorio**
@@ -43,9 +46,6 @@ Durante el curso, realicé trabajos grupales con mis compañeros:
 
 ## 🌐 **Página Web del Repositorio**
 Puedes visitar el repositorio hospedado en Vercel: [🔗 Vercel](https://bootcamp-full-stack.vercel.app/).
-
-## 🌐 **Repositorio del Proyecto Final**
-[🔗 Planify](https://github.com/cesarl94/planify)
 
 ---
 
